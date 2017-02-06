@@ -1,0 +1,52 @@
+doctype html
+html
+   head
+      title="QQ"
+      link(rel='stylesheet' href="/stylesheets/talk.css")
+      script(type='text/javascript' src="/javascripts/jquery.js")
+      script(type='text/javascript' src="/javascripts/talk.js")
+      script(type='text/javascript' src="/javascripts/send_word.js")
+      script(type='text/javascript' src="/socket.io/socket.io.js")
+      div#shadow
+      input(type="text",class="hidden_data",id="hidden_data" value="#{JSON.stringify(title)}")
+      input(type="text",class="hidden_data" id="hidden_userqq" value="#{title[0].name}")
+      input(type="text",class="hidden_data" id="hidden_dialog")
+      form(id="talk_form")
+         div#talk_title
+            div#img_frame
+               img(src="../images/cordova.png",id="talk_profile")
+            span#talk_name.text #{title[0].nickname}
+            span#tatoo.text One of a kind
+            img(src="../images/icons_list.png",id="img_group")
+         div#talk_list
+            div#talk_list_header 会话
+            div#talk_list_member
+               ul#talk_list_content
+            div#talk_footer
+               div#conversation_footer.footer_div
+                  img(src="../images/tab_icon_conversation_selected.png",class="footer_img",id="conversation")
+                  span.footer_text 会话
+               div#contact_footer.footer_div
+                  img(src="../images/tab_icon_contact.png",class="footer_img",id="contact")
+                  span.footer_text 联系人
+               div#find_footer.footer_div
+                  img(src="../images/tab_icon_plugin.png",class="footer_img",id="find")
+                  span.footer_text 发现
+               div#setting_footer.footer_div_righter
+                  img(src="../images/tab_icon_setup.png",class="footer_img",id="setting")
+                  span.footer_text 设置
+         div#change_background
+            img(src="../images/talk_left_arrow.png", id="left_arrow",onclick="last_photo()")
+            img(src="../images/talk_right_arrow.png",id="right_arrow",onclick="next_photo()")
+         div#talk_panel
+            div#talk_panel_header
+               div#talk_panel_header_menu
+                  img(src="../images/pannel-arrow-down.png",class="arrow_down")
+               span
+               input(type="text",class="hidden_data",id="hidden_talkerqq",value="-1")
+               div#talk_panel_header_close 关闭
+            div#talk_panel_content
+            div#talk_panel_send
+               img(src="../images/chat_bottombar_icon_face.png",class="face_img")
+               input(type="text",id="talk_panel_image")
+               div#talk_panel_send_btn 发送

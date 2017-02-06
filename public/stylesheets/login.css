@@ -1,0 +1,139 @@
+html,body{
+    height:100%;
+    overflow:scroll;
+}
+#frame{
+    position:relative;
+}
+#talk_frame{
+     position:relative;
+     margin:15% auto 0 auto;
+     border:5px solid black;
+     height:100%;
+     width:20%;
+     border-radius: 15px;
+     background-color: rgba(245, 245, 245, 0.97);
+ }
+#close{
+    position:relative;
+    width:14px;
+    height:14px;
+    border-radius: 7px;
+    background-color:rgba(196, 196, 196, 0.97);
+    margin-left:5%;
+    margin-top:5%;
+}
+#close:hover{
+    background-color: red;
+}
+#profile{
+    position:relative;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    border:1px solid rgba(143, 143, 143, 0.97);
+    background:url(../images/cordova.png);
+    background-position:50% 50%;
+    margin:10% auto;
+    outline:none;
+}
+#login_state{
+    position:absolute;
+    width:14px;
+    height:14px;
+    border-radius: 7px;
+    background-color: rgba(46, 192, 8, 1);
+    left:45px;
+    top:95px;
+}
+#profile:hover{
+    box-shadow: 0px 0px 3px #56d1ff;
+}
+#userId{
+    position:relative;
+    margin:50px auto 0 auto;
+    width:160px;
+    height:30px;
+    border:0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    display: block;
+    outline: none;
+    font-size: 17px;
+}
+#password_frame{
+    position: relative;
+}
+#password{
+    position:relative;
+    margin:8px auto 0 auto;
+    width:160px;
+    height:30px;
+    border:0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    display: block;
+    outline: none;
+    font-size: 17px;
+
+}
+#show_function{
+    position:relative;
+    margin:30px auto 10px auto;
+    width:30px;
+    height:8px;
+    background-color:rgba(118, 118, 118, 0.64);
+    clear: both;
+}
+#show_function:hover{
+    background-color:rgba(88, 210, 255, 0.63);
+}
+#login{
+    position:absolute;
+    width:30px;
+    height:30px;
+    left:70%;
+    border-radius: 15px;
+    top:0px;
+    opacity:0.7;
+    background:url(../images/login.png);
+    background-position:50% 50%;
+}
+#login:hover{
+    opacity: 1;
+}
+#talk_function{
+    -webkit-transition: height 0.5s;
+    position:absolute;
+    background-color: rgba(4, 177, 249, 0.63);
+    width:104%;
+    height:0px;
+    margin-top:-5%;
+    margin-left: -5px;
+    z-index: -1;
+}
+#table{
+    margin-left: 8%;
+    margin-top:8%;
+    color: white;
+    font-size: 15px;
+}
+#one{
+    position:relative;
+    width:14px;
+    height:14px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px;
+}
+#one:hover{
+    background-color:rgba(196, 196, 196, 0.97);
+}
+#two{
+    position:relative;
+    width:14px;
+    height:14px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px;
+}

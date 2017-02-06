@@ -1,0 +1,32 @@
+doctype html
+html
+   head
+      title='Login'
+      link(rel='stylesheet' href='/stylesheets/login.css')
+      script(type='text/javascript' src="/javascripts/jquery.js")
+      script(type='text/javascript' src="/javascripts/login.js")
+      form(method="post",name="login_form",id="login_form",action="login")
+         div#frame
+            div#talk_frame
+               div#close
+               div#profile
+                  div#login_state
+               input(type="text", placeholder="输入账号",id="userId" name="userId")
+               div#password_frame
+                  input(type="password", placeholder="输入密码",id="password",name="talk_password")
+                  div#login(onclick="submit()")
+               div#show_function
+               div#talk_function
+                  table#table(border=0,cellspacing=10)
+                     tr
+                        td
+                           div#one
+                        td 记住密码
+                        td(width=30)
+                        td 忘记密码
+                     tr
+                        td
+                           div#two
+                        td 自动登录
+                        td(width=30)
+                        td 注册账号

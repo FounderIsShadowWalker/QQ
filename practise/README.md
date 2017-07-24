@@ -6,3 +6,5 @@ mm
 
 这是个新分支
 Creating a new branch is quick and simple.
+
+fix bug
